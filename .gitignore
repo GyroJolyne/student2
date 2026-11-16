@@ -14,3 +14,10 @@ desktop.ini
 .vscode/
 .idea/
 *.log
+
+# ffmpeg 两遍编码中间文件
+ffmpeg2pass*.log*
+ffmpeg2pass*.log.mbtree
+
+# 本地一键推送辅助脚本（不入库）
+push-to-github.bat
