@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#060608">
+<title>PROFILE SIGNAL — AI Production Engineer</title>
+<meta name="description" content="专注 AIGC 视觉内容生产与工程化落地，能够独立完成 ComfyUI 复杂生成工作流编排调试、Agent 智能体工程开发，以及 AI Coding 工具链搭建与调优。">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<style>
+  :root{
+    --bg:#060608;
+    --ink:#f4f2fb;
+    --ink-2:#aaa5be;
+    --ink-3:#726d87;
+    --line:rgba(255,255,255,.085);
+    --pad-x:clamp(24px,8vw,132px);
+  }
+
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+  html{-webkit-text-size-adjust:100%}
+  html,body{min-height:100%}
+
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    overflow-x:hidden;
+  }
+
+  /* ---------- 背景光场：右侧紫青双光斑 + 极细点阵，纯 CSS 无素材 ---------- */
+  .stage{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+
+  .glow{position:absolute;border-radius:50%;will-change:transform}
+  .glow--violet{
+    width:min(82vw,1080px);aspect-ratio:1;right:-22vw;top:-26vw;
+    background:radial-gradient(circle at 50% 50%,
+      rgba(158,132,255,.60) 0%,
+      rgba(116,88,232,.34) 30%,
+      rgba(74,54,150,.12) 56%,
+      rgba(74,54,150,0) 70%);
+    filter:blur(44px);
+    opacity:.95;
+  }
+  .glow--mint{
+    width:min(66vw,880px);aspect-ratio:1;right:-16vw;bottom:-24vw;
+    background:radial-gradient(circle at 50% 50%,
+      rgba(104,244,214,.58) 0%,
+      rgba(56,204,184,.28) 30%,
+      rgba(24,110,108,.09) 54%,
+      rgba(24,110,108,0) 68%);
+    filter:blur(48px);
+    opacity:.9;
+  }
+  .glow--deep{
+    width:min(80vw,1000px);aspect-ratio:1;left:-28vw;bottom:-34vw;
+    background:radial-gradient(circle at 50% 50%,
+      rgba(76,52,148,.34) 0%,
+      rgba(48,32,96,.14) 44%,
+      rgba(48,32,96,0) 66%);
+    filter:blur(60px);
+  }
+
+  /* 参考图里那枚带清晰边缘的光斑 */
+  .orb{
+    position:absolute;right:-4vw;bottom:2vh;
+    width:min(30vw,380px);aspect-ratio:1;border-radius:50%;
+    background:radial-gradient(circle at 34% 30%,
+      rgba(196,255,244,.30) 0%,
+      rgba(104,230,208,.22) 40%,
+      rgba(60,180,180,.06) 66%,
+      rgba(0,0,0,0) 78%);
+    filter:blur(3px);
+    mix-blend-mode:screen;
+    opacity:.75;
+  }
+
+  .grid{
+    position:absolute;inset:0;
+    background-image:radial-gradient(rgba(255,255,255,.055) 1px,transparent 1px);
+    background-size:34px 34px;
+    -webkit-mask-image:radial-gradient(ellipse 78% 68% at 68% 42%,#000 0%,transparent 72%);
+    mask-image:radial-gradient(ellipse 78% 68% at 68% 42%,#000 0%,transparent 72%);
+    opacity:.7;
+  }
+
+  /* 边缘压暗，避免光晕冲到画面边界 */
+  .vignette{
+    position:absolute;inset:0;
+    background:
+      linear-gradient(180deg,rgba(6,6,8,.72) 0%,rgba(6,6,8,0) 22%,rgba(6,6,8,0) 74%,rgba(6,6,8,.86) 100%),
+      radial-gradient(ellipse at 30% 50%,rgba(6,6,8,.55) 0%,rgba(6,6,8,0) 60%);
+  }
+
+  /* ---------- 版面 ---------- */
+  .page{
+    position:relative;z-index:1;
+    min-height:100svh;
+    display:flex;
+    padding:clamp(48px,9vh,110px) var(--pad-x);
+  }
+
+  /* margin:auto 垂直居中，内容超高时自动退化为顶部起始，不会被裁 */
+  .profile{width:100%;max-width:880px;margin:auto 0}
+
+  /* 标题 PROFILE SIGNAL —— 大字符间距标签，与职位共同构成首屏视觉焦点 */
+  .eyebrow{
+    display:flex;align-items:center;gap:clamp(12px,1.6vw,18px);
+    font-size:clamp(10.5px,1.02vw,12px);
+    font-weight:500;
+    letter-spacing:.44em;
+    text-transform:uppercase;
+    color:#918caa;
+    white-space:nowrap;
+  }
+  .eyebrow::before{
+    content:"";display:block;
+    width:clamp(26px,3.6vw,46px);height:1px;
+    background:linear-gradient(90deg,rgba(145,140,170,0),rgba(145,140,170,.9));
+    flex:none;
+  }
+
+  /* 职位 —— 全页最强对比度 */
+  .role{
+    margin-top:clamp(20px,2.6vw,32px);
+    font-size:clamp(40px,7.9vw,96px);
+    line-height:1.01;
+    letter-spacing:-.04em;
+    font-weight:800;
+    color:#fff;
+    max-width:7em; /* 稳定两行：Al Production / Engineer */
+  }
+
+  /* 简介 */
+  .intro{
+    margin-top:clamp(24px,3.2vw,40px);
+    max-width:600px;
+    font-size:clamp(14.5px,1.3vw,17px);
+    line-height:2.05;
+    letter-spacing:.012em;
+    color:var(--ink-2);
+    text-align:justify;
+    text-justify:inter-ideograph;
+    text-wrap:pretty;
+  }
+
+  /* 信息分区：联系方式 / 学历 各自成组 */
+  .block{
+    margin-top:clamp(34px,4.2vw,56px);
+    border-top:1px solid var(--line);
+  }
+  .block--edu{
+    margin-top:clamp(24px,2.8vw,34px);
+    border-top-color:rgba(255,255,255,.14);
+  }
+
+  .row{
+    display:grid;
+    grid-template-columns:clamp(68px,9vw,104px) minmax(0,1fr);
+    gap:0 clamp(14px,2vw,24px);
+    align-items:baseline;
+    padding:clamp(15px,1.7vw,19px) 0;
+    border-bottom:1px solid var(--line);
+  }
+  .row dt{
+    font-size:clamp(11.5px,1.02vw,12.5px);
+    letter-spacing:.26em;
+    color:var(--ink-3);
+    font-weight:400;
+    white-space:nowrap;
+  }
+  .row dd{
+    font-size:clamp(14.5px,1.3vw,17px);
+    font-weight:500;
+    line-height:1.7;
+    color:#eeeaf8;
+    letter-spacing:.008em;
+    word-break:break-word;
+  }
+  .row dd a{
+    color:inherit;text-decoration:none;
+    border-bottom:1px solid rgba(255,255,255,.22);
+    padding-bottom:1px;
+    transition:border-color .25s,color .25s;
+  }
+  .row dd a:hover{border-color:rgba(180,164,255,.9);color:#fff}
+
+  .num{font-variant-numeric:tabular-nums}
+  .sep{color:var(--ink-3)}
+  .seg{display:inline-block;white-space:nowrap}
+
+  /* ---------- 入场 ---------- */
+  @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+  @keyframes glowIn{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
+
+  .profile > *{animation:rise .95s cubic-bezier(.16,.84,.3,1) both}
+  .profile > *:nth-child(1){animation-delay:.08s}
+  .profile > *:nth-child(2){animation-delay:.16s}
+  .profile > *:nth-child(3){animation-delay:.26s}
+  .profile > *:nth-child(4){animation-delay:.36s}
+  .profile > *:nth-child(5){animation-delay:.44s}
+
+  .glow--violet,.orb{animation:glowIn 1.6s cubic-bezier(.16,.84,.3,1) both}
+  .glow--mint{animation:glowIn 1.9s cubic-bezier(.16,.84,.3,1) .12s both}
+
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+
+  /* ---------- 响应式 ---------- */
+  @media(max-width:900px){
+    :root{--pad-x:clamp(22px,6vw,56px)}
+    .glow--violet{right:-34vw;top:-24vw;opacity:.8}
+    .glow--mint{right:-30vw;bottom:-30vw;opacity:.75}
+    .orb{right:-12vw;bottom:4vh;opacity:.6}
+    .grid{
+      -webkit-mask-image:radial-gradient(ellipse 100% 60% at 62% 26%,#000 0%,transparent 76%);
+      mask-image:radial-gradient(ellipse 100% 60% at 62% 26%,#000 0%,transparent 76%);
+    }
+  }
+
+  @media(max-width:640px){
+    .page{padding-top:clamp(48px,10vh,84px);padding-bottom:clamp(40px,8vh,72px)}
+    .role{font-size:clamp(34px,10.4vw,54px);letter-spacing:-.03em}
+    .intro{max-width:none;text-align:left;line-height:1.95}
+    .row{grid-template-columns:1fr;gap:9px;padding:17px 0}
+    .row dt{letter-spacing:.24em}
+    .row dd{font-size:15px;line-height:1.62}
+    .glow--violet{right:-26vw;top:-10vw;opacity:1}
+    .glow--mint{right:-34vw;bottom:-10vw;opacity:.9}
+  }
+
+  @media(max-height:700px){
+    .page{padding-top:clamp(32px,6vh,56px);padding-bottom:clamp(28px,5vh,48px)}
+    .eyebrow{margin-bottom:0}
+    .role{margin-top:clamp(14px,1.8vw,22px)}
+    .intro{margin-top:clamp(16px,2.2vw,26px);line-height:1.9}
+    .block{margin-top:clamp(20px,2.6vw,32px)}
+    .block--edu{margin-top:clamp(14px,1.8vw,22px)}
+    .row{padding:clamp(11px,1.3vw,15px) 0}
+  }
+
+  @media(max-width:380px){
+    .eyebrow{letter-spacing:.32em;font-size:10px}
+  }
+</style>
+</head>
+<body>
+
+<div class="stage" aria-hidden="true">
+  <div class="glow glow--violet"></div>
+  <div class="glow glow--deep"></div>
+  <div class="glow glow--mint"></div>
+  <div class="orb"></div>
+  <div class="grid"></div>
+  <div class="vignette"></div>
+</div>
+
+<main class="page">
+  <article class="profile">
+
+    <!-- 标题 -->
+    <p class="eyebrow">PROFILE SIGNAL</p>
+
+    <!-- 职位 -->
+    <h1 class="role">AI Production Engineer</h1>
+
+    <!-- 个人简介 -->
+    <p class="intro">专注 AIGC 视觉内容生产与工程化落地，能够独立完成 ComfyUI 复杂生成工作流编排调试、Agent 智能体工程开发，以及 AI Coding 工具链搭建与调优。推动图像生成、智能 Agent、代码生成能力从 Demo 落地到生产环境。</p>
+
+    <!-- 联系方式 -->
+    <dl class="block">
+      <div class="row">
+        <dt>邮箱</dt>
+        <dd><a href="mailto:2192455407@qq.com">2192455407@qq.com</a></dd>
+      </div>
+    </dl>
+
+    <!-- 学历 -->
+    <dl class="block block--edu">
+      <div class="row">
+        <dt>学历</dt>
+        <dd><span class="seg">本科</span> <span class="sep">/</span> <span class="seg">河南理工大学</span> <span class="sep">/</span> <span class="seg">建筑与艺术设计学院</span> <span class="sep">/</span> <span class="seg">建筑学</span> <span class="sep">/</span> <span class="seg num">2020-2025</span></dd>
+      </div>
+    </dl>
+
+  </article>
+</main>
+
+</body>
+</html>

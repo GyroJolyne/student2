@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>Leo — AI Production Engineer</title>
+<meta name="description" content="Leo 的个人作品集：AIGC 视觉生产、ComfyUI 工作流、Agent 智能体与 AI Coding 工具链。让 AI 能力从 Demo 稳定落地到生产。">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./css/style.css?v=20261116-noblack">
+<link rel="stylesheet" href="./css/gallery.css?v=20261116-loop2">
+<link rel="stylesheet" href="./css/video-gallery.css?v=20261116-wfprompt3">
+</head>
+<body>
+	<div class="content-wrapper">
+		<div class="kora-loader" role="status" aria-label="Loading Leo">
+			<div class="kora-loader-bunny" data-mascot="bear">
+				<svg viewBox="0 0 120 120" width="128" height="128" aria-hidden="true">
+					<!-- 外发光描边层 -->
+					<g fill="#c8c3f2" stroke="#c8c3f2" stroke-width="6" stroke-linejoin="round">
+						<circle cx="26" cy="35" r="14.5"/>
+						<circle cx="94" cy="35" r="14.5"/>
+						<ellipse cx="60" cy="68" rx="45" ry="36"/>
+					</g>
+					<!-- 黑色本体：盖住内部描边，只留外圈 -->
+					<g fill="#050508">
+						<circle cx="26" cy="35" r="14.5"/>
+						<circle cx="94" cy="35" r="14.5"/>
+						<ellipse cx="60" cy="68" rx="45" ry="36"/>
+					</g>
+					<!-- 熊猫黑眼圈 -->
+					<g fill="#c8c3f2">
+						<ellipse cx="41" cy="60" rx="13" ry="15.5" transform="rotate(-18 41 60)"/>
+						<ellipse cx="79" cy="60" rx="13" ry="15.5" transform="rotate(18 79 60)"/>
+					</g>
+					<!-- 眼睛：瞳孔 + 高光 -->
+					<g fill="#08080d">
+						<ellipse cx="42.6" cy="61" rx="5.2" ry="6.2"/>
+						<ellipse cx="77.4" cy="61" rx="5.2" ry="6.2"/>
+					</g>
+					<g fill="#fdfdff">
+						<circle cx="40.4" cy="58.4" r="1.9"/>
+						<circle cx="75.2" cy="58.4" r="1.9"/>
+					</g>
+					<!-- 鼻 + 微笑 -->
+					<ellipse cx="60" cy="80" rx="6.2" ry="4.6" fill="#c8c3f2"/>
+					<path d="M53 87c2.2 4.2 11.8 4.2 14 0" fill="none" stroke="#c8c3f2" stroke-width="2.6" stroke-linecap="round" opacity=".9"/>
+				</svg>
+			</div>
+			<div class="kora-loader-shadow"></div>
+		</div>
+		<div class="content">
+			<div class="header">
+				<div class="header-logo"><svg viewBox="0 0 260 90" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Leo — AI production portfolio"><text x="130" y="60" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-weight="700" font-size="72" letter-spacing="-5">leo</text><text x="130" y="83" text-anchor="middle" fill="#b9bbc6" font-family="Arial, sans-serif" font-size="9" letter-spacing="3">AI PRODUCTION &amp; ENGINEERING</text></svg>
+				</div>
+			</div>
+			<div class="section-wrap" data-visible="false">
+				<div class="scroll">
+					<button class="scroll-btn">EXPLORE</button>
+					<div class="scroll-fillCircle"></div>
+					<svg
+						class="scroll-circle"
+						xmlns="http://www.w3.org/2000/svg"
+						width="200"
+						height="200"
+						viewBox="0 0 200 200"
+						fill="none"
+						color="#fff"
+						>
+						<defs>
+							<linearGradient id="spinner-gradient">
+							<stop offset="0%" stop-opacity="0" stop-color="currentColor" />
+							<stop offset="100%" stop-opacity="1" stop-color="currentColor" />
+							</linearGradient>
+						</defs>
+						<circle
+							cx="100"
+							cy="100"
+							r="98"
+							fill="none"
+							stroke="url(#spinner-gradient)"
+							stroke-width="1.1"
+							opacity=".5"
+						/>
+					</svg>
+				</div>
+				<canvas id="canvas"></canvas>
+				<div class="subtitles">
+				</div>
+				<div class="section section1">
+					<aside class="leo-panel leo-panel--hero">
+						<p class="leo-panel-label">AI PRODUCTION / AIGC &amp; AGENT</p>
+						<h1 class="leo-hero-title">让 AI 能力，<br>走进真实生产。</h1>
+						<p class="leo-panel-body">专注 AIGC 视觉内容生产与工程化落地，把 ComfyUI 工作流、Agent 与 AI Coding 工具链从 Demo 推向稳定交付。</p>
+						<p class="leo-panel-note">滚轮翻页 · 或点右下角圆点</p>
+					</aside>
+				</div>
+				<div class="section section2">
+					<section class="photo-gallery" aria-label="作品图片画廊">
+						<div class="photo-gallery-scroll" tabindex="0" aria-label="当前作品页面，上下滚动浏览">
+							<div class="photo-gallery-sticky">
+								<div class="photo-gallery-topline"><span>LEO / SELECTED WORKS</span><span>03 PAGES <i aria-hidden="true">·</i> 53 FRAMES</span></div>
+								<nav class="photo-gallery-tabs" aria-label="作品分类导航"></nav>
+							</div>
+							<div class="photo-gallery-content">
+								<div class="photo-gallery-intro"><p>ACG / SELECTED WORKS</p><h2>ACG 插画</h2><span class="photo-gallery-hint">角色海报精选 · 竖幅视觉作品</span></div>
+								<div class="photo-gallery-groups"></div>
+								<p class="photo-gallery-end">END OF COLLECTION <span>— LEO / 2026</span></p>
+							</div>
+						</div>
+						<div class="photo-lightbox" role="dialog" aria-modal="true" aria-label="作品图片预览" hidden>
+							<div class="photo-lightbox-shade" data-close-lightbox></div>
+							<div class="photo-lightbox-toolbar"><nav class="photo-lightbox-tabs" aria-label="切换作品系列"></nav><button class="photo-lightbox-close" type="button" aria-label="关闭图片预览">×</button></div>
+							<div class="photo-lightbox-stage">
+								<button class="photo-lightbox-arrow photo-lightbox-previous" type="button" aria-label="上一张">‹</button>
+								<figure class="photo-lightbox-figure"><img class="photo-lightbox-image" alt="" decoding="async"><figcaption><span><small class="photo-lightbox-category"></small><strong class="photo-lightbox-title"></strong></span><small class="photo-lightbox-count"></small></figcaption></figure>
+								<button class="photo-lightbox-arrow photo-lightbox-next" type="button" aria-label="下一张">›</button>
+							</div>
+							<p class="photo-lightbox-footnote">← → 切换作品 <span>ESC 关闭</span></p>
+						</div>
+					</section>
+				</div>
+				<div class="section section3">
+					<aside class="leo-panel">
+						<p class="leo-panel-label">ABOUT / 关于</p>
+						<p class="leo-panel-lead">把生成能力，变成稳定的生产力。</p>
+						<p class="leo-panel-body">专注 AIGC 视觉内容生产与工程化落地，覆盖 ComfyUI 工作流编排、Agent 智能体开发与 AI Coding 工具链搭建。</p>
+						<p class="leo-panel-body">从生成 Demo 到稳定交付：让图像生成、智能 Agent 与代码生成能力接入真实流程，可靠地解决问题。</p>
+						<ul class="leo-tags">
+							<li>ComfyUI</li>
+							<li>AIGC</li>
+							<li>Agent</li>
+							<li>AI Coding</li>
+							<li>Workflow</li>
+						</ul>
+					</aside>
+				</div>
+				<div class="section section5">
+					<section class="video-showcase" aria-label="视频作品集">
+						<div class="video-showcase-scroll" tabindex="0" aria-label="视频作品环形画廊，可拖动浏览">
+							<div class="video-showcase-shell">
+							<header class="video-showcase-heading">
+								<p class="video-showcase-kicker">VIDEO / SELECTED WORKS</p>
+								<h1>视频作品</h1>
+								<p>5 部动态作品 · 拖动切换，点击卡片原位播放</p>
+							</header>
+							<div class="video-arc-stage">
+								<div class="video-arc" role="list" aria-label="影片环形画廊，可拖动浏览">
+												<article class="video-card" role="listitem" data-src="./assets/video/video-01.mp4" data-title="3D 电商手机商品动画" data-desc="以悬浮手机与电商界面为主体的产品展示短片，呈现设备外观、商品内容与空间光影。">
+													<button class="video-card-trigger" type="button" aria-label="播放：3D 电商手机商品动画">
+														<img src="./assets/video/poster-01.png" alt="" loading="lazy" decoding="async">
+														<span class="video-card-play" aria-hidden="true"></span>
+													</button>
+												</article>
+												<article class="video-card" role="listitem" data-src="./assets/video/video-02.mp4" data-title="红色舞台角色视觉短片" data-desc="围绕红色灯光与角色造型展开的竖屏视觉作品，突出人物形象与整体氛围。">
+													<button class="video-card-trigger" type="button" aria-label="播放：红色舞台角色视觉短片">
+														<img src="./assets/video/poster-02.png" alt="" loading="lazy" decoding="async">
+														<span class="video-card-play" aria-hidden="true"></span>
+													</button>
+												</article>
+												<article class="video-card" role="listitem" data-src="./assets/video/video-03.mp4" data-title="水溶C 创意广告展示" data-desc="以水溶C 果汁饮料为主角的创意广告片段，明亮背景与悬浮果实营造清爽的产品语气。">
+													<button class="video-card-trigger" type="button" aria-label="播放：水溶C 创意广告展示">
+														<img src="./assets/video/poster-03.png" alt="" loading="lazy" decoding="async">
+														<span class="video-card-play" aria-hidden="true"></span>
+													</button>
+												</article>
+												<article class="video-card" role="listitem" data-src="./assets/video/video-04.mp4" data-title="人物穿搭展示" data-desc="以室内空间为背景呈现人物与服装造型，关注穿搭轮廓、色彩和环境氛围。">
+													<button class="video-card-trigger" type="button" aria-label="播放：人物穿搭展示">
+														<img src="./assets/video/poster-04.png" alt="" loading="lazy" decoding="async">
+														<span class="video-card-play" aria-hidden="true"></span>
+													</button>
+												</article>
+												<article class="video-card" role="listitem" data-src="./assets/video/video-05.mp4" data-title="幻想角色视觉短片" data-desc="以白发角色与暗红黑色系造型为视觉重点，呈现幻想风格人物形象。">
+													<button class="video-card-trigger" type="button" aria-label="播放：幻想角色视觉短片">
+														<img src="./assets/video/poster-05.png" alt="" loading="lazy" decoding="async">
+														<span class="video-card-play" aria-hidden="true"></span>
+													</button>
+												</article>
+								</div>
+							</div>
+							<div class="video-caption" aria-live="polite">
+								<p class="video-caption-index">VIDEO / 01</p>
+								<h2 class="video-caption-title">3D 电商手机商品动画</h2>
+								<p class="video-caption-desc">以悬浮手机与电商界面为主体的产品展示短片，呈现设备外观、商品内容与空间光影。</p>
+							</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="section section6" data-visible="false" inert aria-hidden="true">
+					<section class="resource-showcase loro-showcase" aria-label="LORO 已训练模型">
+						<div class="resource-showcase-scroll" tabindex="0" aria-label="LORO 模型内容，可上下滚动">
+							<div class="resource-showcase-shell">
+								<header class="resource-showcase-heading">
+									<div><p class="resource-showcase-kicker">MODEL / LORA TRAINING</p><h1>LORO</h1><p>已训练模型 · ModelScope 文件页</p></div>
+									<span class="resource-showcase-count">02 MODELS</span>
+								</header>
+								<div class="loro-dossiers">
+									<article class="loro-dossier">
+										<div class="loro-dossier-main">
+											<figure class="loro-dossier-cover loro-dossier-cover--compare"><div class="compare" data-compare role="slider" tabindex="0" style="--p:50%" aria-label="Q版人物 LORO：左右拉动对照原图与 Q 版结果" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="compare-layer compare-b"><img src="./assets/gallery/loro-q-1-result.webp" alt="调整后：同一角色 Q 版化后的造型" loading="lazy"></div><div class="compare-layer compare-a"><img src="./assets/gallery/loro-q-1-source.webp" alt="原图：暗红配色的魔女全身立绘" loading="lazy"></div><div class="compare-divider" aria-hidden="true"></div><div class="compare-handle" aria-hidden="true"></div><span class="compare-tag compare-tag-a">原图</span><span class="compare-tag compare-tag-b">调整后</span></div><figcaption>Q VERSION · 原图 / Q 版对照</figcaption></figure>
+											<div class="loro-dossier-copy"><div class="loro-dossier-title"><div><p class="resource-card-index">01 / TRAINED MODEL</p><h2>Q版人物 LORO</h2></div><span class="loro-dossier-code">QWEN / CHARACTER</span></div><p class="resource-card-description">Q 版人物方向的已训练模型。当前页面呈现模型入口与站内相关视觉作品，具体训练配置请以模型文件页为准。</p><dl class="loro-specs"><div><dt>MODEL</dt><dd>Sakuraleo / Qwen</dd></div><div><dt>方向</dt><dd>Q 版人物</dd></div><div><dt>资料</dt><dd>ModelScope 模型仓库</dd></div><div><dt>训练参数</dt><dd>以仓库信息为准</dd></div></dl><a class="resource-card-link" href="https://www.modelscope.cn/models/Sakuraleo/Qwen/files" target="_blank" rel="noopener noreferrer">在线查看模型 <span aria-hidden="true">↗</span></a></div>
+										</div>
+										<div class="loro-dossier-samples"><p>Q VERSION / VISUALS <span>用户提供的 Q 版人物作品图</span></p><div class="loro-sample-strip"><img src="./assets/gallery/loro-q-2-end.jpg" alt="Q版人物作品示例 2" loading="lazy"><img src="./assets/gallery/loro-q-3-end.jpg" alt="Q版人物作品示例 3" loading="lazy"><img src="./assets/gallery/loro-q-5-end.jpg" alt="Q版人物作品示例 5" loading="lazy"><img src="./assets/gallery/loro-q-7-end.jpg" alt="Q版人物作品示例 7" loading="lazy"><img src="./assets/gallery/loro-q-8-end.jpg" alt="Q版人物作品示例 8" loading="lazy"><img src="./assets/gallery/loro-q-9-end.jpg" alt="Q版人物作品示例 9" loading="lazy"></div></div>
+									</article>
+									<article class="loro-dossier">
+										<div class="loro-dossier-main">
+											<figure class="loro-dossier-cover loro-dossier-cover--wide"><img src="./assets/gallery/loro-xhc-cover.webp" alt="新海诚风格 LORO 视觉作品，云层与城市天际线" loading="lazy"><figcaption>SHINKAI STYLE · 用户提供作品图</figcaption></figure>
+											<div class="loro-dossier-copy"><div class="loro-dossier-title"><div><p class="resource-card-index">02 / TRAINED MODEL</p><h2>新海诚风格 LORO</h2></div><span class="loro-dossier-code">KREA-2 / STYLE</span></div><p class="resource-card-description">风格化画面方向的已训练模型。沿用左图主视觉、右侧资料表与下方横向作品带的排版；实际效果与参数请查看模型仓库。</p><dl class="loro-specs"><div><dt>MODEL</dt><dd>Sakuraleo / krea-2</dd></div><div><dt>方向</dt><dd>新海诚风格</dd></div><div><dt>资料</dt><dd>ModelScope 模型仓库</dd></div><div><dt>训练参数</dt><dd>以仓库信息为准</dd></div></dl><a class="resource-card-link" href="https://www.modelscope.cn/models/Sakuraleo/krea-2/files?version=20261115104831" target="_blank" rel="noopener noreferrer">在线查看模型 <span aria-hidden="true">↗</span></a></div>
+										</div>
+										<div class="loro-dossier-samples"><p>SHINKAI STYLE / VISUALS <span>用户提供的风格作品图</span></p><div class="loro-sample-strip loro-sample-strip--7"><img src="./assets/gallery/loro-xhc-girl.jpg" alt="黄昏海边的动画风格人物" loading="lazy"><img src="./assets/gallery/loro-xhc-street.png" alt="明亮天空下的日式街景" loading="lazy"><img src="./assets/gallery/loro-xhc-sunset.webp" alt="海边草地上的人物与晚霞" loading="lazy"><img src="./assets/gallery/loro-xhc-railway.png" alt="铁道旁的明亮风景" loading="lazy"><img src="./assets/gallery/loro-xhc-bridge.png" alt="黄昏时分的桥景" loading="lazy"><img src="./assets/gallery/loro-xhc-searoad.webp" alt="晴空下的海边公路、渔船与码头" loading="lazy"><img src="./assets/gallery/loro-xhc-station.webp" alt="海边站台长椅上望向海面的少女" loading="lazy"></div></div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="section section7" data-visible="false" inert aria-hidden="true">
+					<section class="resource-showcase workflow-showcase" aria-label="ComfyUI 工作流">
+						<div class="resource-showcase-scroll" tabindex="0" aria-label="ComfyUI 工作流文件，可上下滚动">
+							<div class="resource-showcase-shell">
+								<header class="resource-showcase-heading">
+									<div><p class="resource-showcase-kicker">COMFYUI / WORKFLOW COLLECTION</p><h1>ComfyUI 工作流</h1><p>4 份 JSON 工作流 · 下载文件或展开节点详情</p></div>
+									<span class="resource-showcase-count">04 FILES</span>
+								</header>
+							<div class="workflow-card-grid">
+								<article class="workflow-card">
+									<div class="workflow-card-copy">
+										<p class="workflow-card-meta"><span>01</span>壁纸生成与放大</p>
+										<h2>Krea2 二次元 4K 艺术壁纸</h2>
+										<p class="workflow-card-description">Krea2 与风格 LoRA 组合，经过采样及图像放大输出壁纸。</p>
+										<ul class="workflow-tags"><li>Krea2 Turbo</li><li>LoRA Loader</li><li>4x-AnimeSharp</li></ul>
+										<div class="workflow-card-actions">
+											<a class="resource-card-link" href="./assets/workflows/Krea2-二次元-4k艺术壁纸.json" download="Krea2-二次元-4k艺术壁纸.json">下载工作流 <span aria-hidden="true">↓</span></a>
+											<button class="workflow-detail-trigger" type="button" data-workflow="krea2-wallpaper" aria-haspopup="dialog">查看详情 <span aria-hidden="true">↗</span></button>
+										</div>
+									</div>
+									<figure class="workflow-card-media">
+										<img src="./assets/gallery/workflow-pyro-heart.jpg" alt="Pyro Heart 角色宣传视觉海报" loading="lazy"><figcaption>PYRO HEART · 角色视觉</figcaption>
+									</figure>
+								</article>
+								<article class="workflow-card">
+									<div class="workflow-card-copy">
+										<p class="workflow-card-meta"><span>02</span>文生图 / 洗图 / 改图</p>
+										<h2>MOSS 全自动图像创作与编辑</h2>
+										<p class="workflow-card-description">结合扩写、采样与 SeedVR2 放大节点的人像创作工作流。</p>
+										<ul class="workflow-tags"><li>MOSS SFT</li><li>RHLLMChatNode</li><li>SeedVR2</li></ul>
+										<div class="workflow-card-actions">
+											<a class="resource-card-link" href="./assets/workflows/MOSS+全自动文生图_洗图_改图（人物特写_改变风格）.json" download="MOSS+全自动文生图_洗图_改图（人物特写_改变风格）.json">下载工作流 <span aria-hidden="true">↓</span></a>
+											<button class="workflow-detail-trigger" type="button" data-workflow="moss-image-edit" aria-haspopup="dialog">查看详情 <span aria-hidden="true">↗</span></button>
+										</div>
+									</div>
+									<figure class="workflow-card-media">
+										<img src="./assets/gallery/portrait-photo-02.webp" alt="站内人像作品，作为工作流主题的版式配图，并非该工作流输出" loading="lazy"><figcaption>站内配图 · 非流程输出</figcaption>
+									</figure>
+								</article>
+								<article class="workflow-card">
+									<div class="workflow-card-copy">
+										<p class="workflow-card-meta"><span>03</span>人像姿势编辑</p>
+										<h2>Qwen Image 2.1 人像姿势编辑</h2>
+										<p class="workflow-card-description">以角色姿势图为参考，重绘同一角色的站姿与构图。</p>
+										<ul class="workflow-tags"><li>Qwen Image 2.1</li><li>RH_PoseGallery</li><li>KSampler</li></ul>
+										<div class="workflow-card-actions">
+											<a class="resource-card-link" href="./assets/workflows/Qwen-image2.1-人像姿势编辑.json" download="Qwen-image2.1-人像姿势编辑.json">下载工作流 <span aria-hidden="true">↓</span></a>
+											<button class="workflow-detail-trigger" type="button" data-workflow="qwen-pose-edit" aria-haspopup="dialog">查看详情 <span aria-hidden="true">↗</span></button>
+										</div>
+									</div>
+									<figure class="workflow-card-media">
+										<div class="compare" data-compare role="slider" tabindex="0" style="--p:50%" aria-label="人像姿势编辑：左右拉动对照原图与调整后" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="compare-layer compare-b"><img src="./assets/gallery/workflow-qwen-result.webp" alt="调整后：同一角色改为站姿与全身构图" loading="lazy"></div><div class="compare-layer compare-a"><img src="./assets/gallery/workflow-qwen-source.webp" alt="原图：角色姿势参考（蹲姿）" loading="lazy"></div><div class="compare-divider" aria-hidden="true"></div><div class="compare-handle" aria-hidden="true"></div><span class="compare-tag compare-tag-a">原图</span><span class="compare-tag compare-tag-b">调整后</span></div>
+									</figure>
+								</article>
+								<article class="workflow-card">
+									<div class="workflow-card-copy">
+										<p class="workflow-card-meta"><span>04</span>一键转 Q 版</p>
+										<h2>一键转 Q 版 工作流 V1</h2>
+										<p class="workflow-card-description">Qwen Image Edit 与 Q 版 LoRA 组合，接入图像放大节点。</p>
+										<ul class="workflow-tags"><li>Qwen Image Edit</li><li>QcartoonV1</li><li>SeedVR2</li></ul>
+										<div class="workflow-card-actions">
+											<a class="resource-card-link" href="./assets/workflows/【Aaron寄语秋歌】一键转Q版工作流V1.json" download="【Aaron寄语秋歌】一键转Q版工作流V1.json">下载工作流 <span aria-hidden="true">↓</span></a>
+											<button class="workflow-detail-trigger" type="button" data-workflow="qwen-chibi" aria-haspopup="dialog">查看详情 <span aria-hidden="true">↗</span></button>
+										</div>
+									</div>
+									<figure class="workflow-card-media">
+										<div class="compare" data-compare role="slider" tabindex="0" style="--p:50%" aria-label="一键转 Q 版：左右拉动对照原图与 Q 版结果" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="compare-layer compare-b"><img src="./assets/gallery/workflow-q36-result.webp" alt="调整后：Q 版化角色，红裙造型保留" loading="lazy"></div><div class="compare-layer compare-a"><img src="./assets/gallery/workflow-q36-source.webp" alt="原图：红裙角色全身写真" loading="lazy"></div><div class="compare-divider" aria-hidden="true"></div><div class="compare-handle" aria-hidden="true"></div><span class="compare-tag compare-tag-a">原图</span><span class="compare-tag compare-tag-b">调整后</span></div>
+									</figure>
+								</article>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<button class="leo-drawer-grip" type="button" aria-expanded="false" aria-controls="leo-drawer" aria-label="打开左侧内容栏"><span class="leo-drawer-grip-label" aria-hidden="true">Index</span></button>
+			<div class="footer">
+				<div class="footer-timeline">
+					<button class="footer-timeline-item" type="button" data-section="1" aria-label="首页"><span class="tl-label" aria-hidden="true">首页</span></button>
+					<button class="footer-timeline-item" type="button" data-section="2" aria-label="作品"><span class="tl-label" aria-hidden="true">作品</span></button>
+					<button class="footer-timeline-item" type="button" data-section="3" aria-label="视频作品"><span class="tl-label" aria-hidden="true">视频作品</span></button>
+					<button class="footer-timeline-item" type="button" data-section="4" aria-label="LORO"><span class="tl-label" aria-hidden="true">LORO</span></button>
+					<button class="footer-timeline-item" type="button" data-section="5" aria-label="ComfyUI 工作流"><span class="tl-label" aria-hidden="true">ComfyUI 工作流</span></button>
+					<button class="footer-timeline-item" type="button" data-section="6" aria-label="关于"><span class="tl-label" aria-hidden="true">关于</span></button>
+				</div>
+				<button class="footer-continue" type="button" aria-label="Continue to the page">Continue <span aria-hidden="true">↓</span></button>
+				<div class="footer-copyright">
+					© LEO 2026.<span class="footer-copy-tail"> AIGC / AGENT / ENGINEERING.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	/* 加载兼容垫片
+	   某些托管环境（含本地预览）的 CSP 只把 blob: 放进 img-src / default-src，
+	   却没放进 connect-src。而 GLTFLoader 默认使用 ImageBitmapLoader，
+	   它靠 fetch(blob:...) 读取 GLB 内嵌贴图，会被 CSP 直接拒绝；
+	   贴图返回 null 后引擎在 assignTexture 里给贴图写 encoding 时抛错，
+	   整条加载链中断，world 的 load 事件永不触发，页面就永远停在兔子 loader 上。
+	   把 createImageBitmap 置空即可让 GLTFLoader 回退到 TextureLoader（img 标签），
+	   而 blob: 在 img-src 中是放行的，贴图就能正常解码。 */
+	(function () {
+		try { window.createImageBitmap = undefined; } catch (e) {}
+		try { delete window.createImageBitmap; } catch (e) {}
+	})();
+	</script>
+	<script>
+	/* 左侧文字不再常驻：只有指针贴近左缘 30px 时滑出，点手柄或按 Esc 可收起 */
+	(function () {
+		var grip = document.querySelector('.leo-drawer-grip');
+		if (!grip) return;
+		var panels = Array.prototype.slice.call(document.querySelectorAll('.leo-panel'));
+		var open = false, openT = null, closeT = null;
+		function set(v) {
+			open = !!v;
+			grip.setAttribute('aria-expanded', open ? 'true' : 'false');
+			document.documentElement.setAttribute('data-drawer', open ? 'open' : 'closed');
+			for (var i = 0; i < panels.length; i++) panels[i].setAttribute('data-open', open ? 'true' : 'false');
+		}
+		function later(fn, ms) { return setTimeout(fn, ms); }
+		function closeSoon() { clearTimeout(closeT); closeT = later(function () { set(false); }, 460); }
+		grip.addEventListener('mouseenter', function () { clearTimeout(closeT); clearTimeout(openT); openT = later(function () { set(true); }, 120); });
+		grip.addEventListener('mouseleave', function () { clearTimeout(openT); if (open) closeSoon(); });
+		panels.forEach(function (p) {
+			p.addEventListener('mouseenter', function () { clearTimeout(closeT); });
+			p.addEventListener('mouseleave', closeSoon);
+		});
+		grip.addEventListener('click', function (e) { e.preventDefault(); clearTimeout(openT); clearTimeout(closeT); set(!open); });
+		document.addEventListener('keydown', function (e) { if ((e.key === 'Escape' || e.key === 'Esc') && open) set(false); });
+	})();
+	</script>
+	<script src="./js/script.js"></script>
+	<script src="./js/section-extension.js?v=20261116-loop"></script>
+	<script src="./js/drift-wall.js?v=20261116-drift"></script>
+	<script src="./js/gallery.js?v=20261116-loop"></script>
+	<script src="./js/video-gallery.js?v=20261116-wheel3"></script>
+	<script src="./js/chapter-motion.js?v=20261116-noblack2"></script>
+	<script src="./js/compare-slider.js?v=20261116-wfdetail"></script>
+	<script src="./js/workflow-detail.js?v=20261116-prompt2"></script>
+</body>
+</html>

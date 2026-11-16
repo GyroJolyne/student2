@@ -1,0 +1,103 @@
+/* 本地字体：替代被 CSP 拦截的 fonts.googleapis.com */
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-332be8e68e.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-89e692702d.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-46609f588b.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-c6b17a92fd.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-052918ec8f.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-47c46eb105.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-332be8e68e.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-89e692702d.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-46609f588b.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-c6b17a92fd.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-052918ec8f.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-47c46eb105.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-332be8e68e.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-89e692702d.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-46609f588b.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-c6b17a92fd.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-052918ec8f.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-47c46eb105.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-332be8e68e.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-89e692702d.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-46609f588b.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-c6b17a92fd.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-052918ec8f.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-47c46eb105.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-332be8e68e.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-89e692702d.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-46609f588b.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-c6b17a92fd.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-052918ec8f.woff2') format('woff2');}
+@font-face{font-family:'Jura';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Jura-47c46eb105.woff2') format('woff2');}
+@font-face{font-family:'Roboto Serif';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/RobotoSerif-2fd6e3e3aa.woff2') format('woff2');}
+@font-face{font-family:'Roboto Serif';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/RobotoSerif-b3d21182c0.woff2') format('woff2');}
+@font-face{font-family:'Roboto Serif';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/RobotoSerif-02afe4b397.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-fb11fb6e54.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-e72a3c3c1b.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-1a3360f1c8.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-566ed61130.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-1636515e56.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-3c1f6190e9.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-fb11fb6e54.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-e72a3c3c1b.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-1a3360f1c8.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-566ed61130.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-1636515e56.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-3c1f6190e9.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-fb11fb6e54.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-e72a3c3c1b.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-1a3360f1c8.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-566ed61130.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-1636515e56.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSans-3c1f6190e9.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-5dc2c3f5bc.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-ee863c8ff3.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-14931c95f9.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-2c3adf2575.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-6e1f5f22b9.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-d10c2e6198.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-03b6b4169f.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-63cc50ed2b.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-d88a125549.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-9ddb479f5c.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-622251b461.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-05a9e3a37a.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-5dc2c3f5bc.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-ee863c8ff3.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-14931c95f9.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-2c3adf2575.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-6e1f5f22b9.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-d10c2e6198.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-03b6b4169f.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-63cc50ed2b.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-d88a125549.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-9ddb479f5c.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-622251b461.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-05a9e3a37a.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-5dc2c3f5bc.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-ee863c8ff3.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-14931c95f9.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-2c3adf2575.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-6e1f5f22b9.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-d10c2e6198.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-03b6b4169f.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-63cc50ed2b.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-d88a125549.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-9ddb479f5c.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-622251b461.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/NotoSansJP-05a9e3a37a.woff2') format('woff2');}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Roboto-6d4c1d747f.woff2') format('woff2');}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Roboto-8c9a50ab73.woff2') format('woff2');}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Roboto-3df17f0bfe.woff2') format('woff2');}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Roboto-da92120872.woff2') format('woff2');}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Roboto-0fb06be4e0.woff2') format('woff2');}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Roboto-6d4c1d747f.woff2') format('woff2');}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Roboto-8c9a50ab73.woff2') format('woff2');}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Roboto-3df17f0bfe.woff2') format('woff2');}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Roboto-da92120872.woff2') format('woff2');}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Roboto-0fb06be4e0.woff2') format('woff2');}
+@font-face{font-family:'Bebas Neue';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/BebasNeue-6524f8e98d.woff2') format('woff2');}
+@font-face{font-family:'Comfortaa';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Comfortaa-210757288e.woff2') format('woff2');}
+@font-face{font-family:'Comfortaa';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Comfortaa-7928821dd3.woff2') format('woff2');}
+@font-face{font-family:'Comfortaa';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Comfortaa-dafdf2eed5.woff2') format('woff2');}
+@font-face{font-family:'Comfortaa';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/Comfortaa-8e41c2c327.woff2') format('woff2');}
